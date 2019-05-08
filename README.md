@@ -50,9 +50,9 @@ prediction = reg_model.predict(X_test)
 from sklearn.metrics import mean_squared_error
 print("RMSE:", np.sqrt(mean_squared_error(y_test, prediction)))
 ```
-RMSE: 0.0680852
+RMSE: 0.068257
 
 ### Takeaways
-+ After a great deal of trial and error using log transformation on not only the continuous features but the dependent variable price ended up improving my model a great deal.
++ After a great deal of trial and error using log transformation on not only the continuous features but the dependent variable price ended up improving my model a great deal. However my model is still most likely flawed because instead of having an RMSE of approximately 160,000 it is now around 0.06. 
 + Pandas and Sklern are two powerful libraries with an amazing amount of functionality that I've only begun to explore
 + Data cleaning, binning and creating dummie variables for categorical datas well as the normalization of continuous values through logarithmic transformation are absolutely vital parts of building regression models. This involves a great deal of trial and error and is by far the most time consuming part of the process.
