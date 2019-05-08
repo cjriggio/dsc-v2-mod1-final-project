@@ -22,7 +22,8 @@ from statsmodels.formula.api import ols
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression, Lasso```
+from sklearn.linear_model import LinearRegression, Lasso
+```
 
 
 After loading all the libraries we need lets take a look at the correlation matrix
@@ -39,7 +40,7 @@ According to the heatmap price seemes to be highly correlated with sqfr_living(0
 + (bottom left) The partial regression plot shows a slightly positive correlation but is not very linear.
 + (bottom right) The component and component-plus-residual plot is a good indicator of the nature of the relationship
 
-```
+```python
 prediction = reg_model.predict(X_test)
 from sklearn.metrics import mean_squared_error
 print("RMSE:", np.sqrt(mean_squared_error(y_test, prediction)))
