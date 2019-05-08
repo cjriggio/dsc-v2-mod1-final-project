@@ -27,12 +27,12 @@ from sklearn.linear_model import LinearRegression, Lasso```
 
 After loading all the libraries we need lets take a look at the correlation matrix
 
-![correlation]https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/Correlation%20Matrix.png
+![correlation](https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/Correlation%20Matrix.png)
 
 According to the heatmap price seemes to be highly correlated with sqfr_living(0.7) and grade (0.68)
 
 
-![Regressions]https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/partial_regression.png
+![Regressions](https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/partial_regression.png)
 
 + (top left) The Y and Fitted vs X plot displays the true values of price and the predictions as well as confidence intervals in the form of lines  
 + (top right) The residuals appear to be distributed in a fairly random fashion
