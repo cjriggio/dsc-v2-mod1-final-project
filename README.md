@@ -10,7 +10,7 @@
 
 In this first data science project I take an in depth look at housing data in Kings County, Washington and try to build a regression model in order to answer which features best indicate price.
 
-The data set includes both continuous and categorical data with over 21,000 data points for each column. Outliers and null values were either eliminated or dealt with accordingly before going on to check for correlation. The categorical data was binned and transformed into dummie variables while the continuous data (in some cases) was normalized through the use of log transformation. Finally the data was split for testing and training and ran in a multiple linear regression model. 
+The data set includes both continuous and categorical data with over 21,000 data points for each column. Outliers and null values were either eliminated or dealt with accordingly before going on to check for correlation. The categorical data was binned and transformed into dummie variables while the continuous data (in many cases) was normalized through the use of log transformation. Finally the data was split for testing and training and ran in a multiple linear regression model.
 
 
 ```python
@@ -50,9 +50,9 @@ prediction = reg_model.predict(X_test)
 from sklearn.metrics import mean_squared_error
 print("RMSE:", np.sqrt(mean_squared_error(y_test, prediction)))
 ```
-RMSE: 158278.46713342122
+RMSE: 0.0680852
 
 ### Takeaways
-+ Although squarefoot living, Waterfront, grade and condition appear to be the features that are most important when predicting price, my RMSE is extremely high (approximately 158,000) indicating my model is highly flawed. In other words my model is only capable of predicting price give or take $158,000.  
++ After a great deal of trial and error using log transformation on not only the continuous features but the dependent variable price ended up improving my model a great deal.
 + Pandas and Sklern are two powerful libraries with an amazing amount of functionality that I've only begun to explore
-+ Data cleaning, binning and creating dummie variables for categorical dataas well as the normalization of continous values through logarithmic transformation are absolutely vital parts of building regrssion models. This involves a great deal of trial and error and is by far the most time consumming part of the process.
++ Data cleaning, binning and creating dummie variables for categorical datas well as the normalization of continuous values through logarithmic transformation are absolutely vital parts of building regression models. This involves a great deal of trial and error and is by far the most time consuming part of the process.
