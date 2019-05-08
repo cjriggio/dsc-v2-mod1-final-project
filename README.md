@@ -10,6 +10,8 @@
 
 In this first data science project I take an in depth look at housing data in Kings County, Washington and try to build a regression model in order to answer which features best indicate price.
 
+The data set includes both continuous and categorical data with over 21,000 data points for each column. Outliers and null values were either eliminated or dealt with accordingly before going on to check for correlation. The categorical data was binned and transformed into dummie variables while the continuous data (in some cases) was normalized through the use of log transformation. Finally the data was split for testing and training and ran in a multiple linear regression model. 
+
 
 ```python
 import pandas as pd
@@ -30,7 +32,7 @@ After loading all the libraries we need lets take a look at the correlation matr
 
 ![correlation](https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/Correlation%20Matrix.png)
 
-According to the heatmap price seemes to be highly correlated with sqfr_living(0.7) and grade (0.68)
+According to the heatmap price seemes to be highly correlated with sqfr_living(0.69) and grade (0.68)
 
 
 ![Regressions](https://github.com/cjriggio/dsc-v2-mod1-final-project/blob/master/partial_regression.png)
